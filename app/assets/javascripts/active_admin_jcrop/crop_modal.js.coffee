@@ -35,7 +35,8 @@ window.active_admin_jcrop =
                     image_data: cropper
                   error: ->
                     alert('There was an error while cropping the image')
-                  $(@).dialog('close')                
+                  success: ->
+                    $(@).dialog('close')                
             }
             {
               text: active_admin_jcrop.buttons_text.cancel
